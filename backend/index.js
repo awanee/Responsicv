@@ -3,7 +3,6 @@ const express = require('express');
 const cors = require('cors');
 // Untuk sementara kita ambil dari data.js. Nanti ini akan dihapus.
 const { educationHistory, skills, projects } = require('./data.js');
-
 const app = express();
 app.use(cors());
 
@@ -22,12 +21,11 @@ app.get('/api/projects', (req, res) => {
     res.json(projects);
 });
 
-// HAPUS bagian app.listen() - ini menyebabkan error di Vercel
-// Vercel menangani server secara otomatis
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//     console.log(`Server running on http://localhost:${PORT}`);
-// });
+// Tambahkan ini untuk development lokal
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});
 
-// Export app untuk Vercel
+// Baris ini penting agar Vercel bisa menjalankan backend Anda
 module.exports = app;
