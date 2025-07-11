@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "vercel-build": "vite build && ls -la dist/",
     "preview": "vite preview",
-    "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
-    "lint:eslint": "eslint . --fix",
-    "lint": "run-s lint:*",
+    "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
   "dependencies": {
@@ -24,11 +24,8 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.29.0",
-    "eslint-plugin-oxlint": "~1.1.0",
     "eslint-plugin-vue": "~10.2.0",
     "globals": "^16.2.0",
-    "npm-run-all2": "^8.0.4",
-    "oxlint": "~1.1.0",
     "postcss": "^8.5.6",
     "prettier": "3.5.3",
     "tailwindcss": "^3.4.17",
