@@ -5,7 +5,7 @@
         class="text-4xl font-bold text-gray-800 mb-4 animate-slide-in-left"
         style="animation-delay: 200ms"
       >
-        Halo, Saya <span class="text-blue-600">Anugrah Awan Cahya Putra</span>
+        Halo, Saya <span class="text-blue-600">Anugrah Awan Cahya Putra Rasengan</span>
       </h1>
       <p class="text-xl text-gray-600 mb-8 animate-slide-in-left" style="animation-delay: 400ms">
         Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web dan desain antarmuka.
