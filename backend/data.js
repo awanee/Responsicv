@@ -1,8 +1,8 @@
 // backend/data.js
 const educationHistory = [
-{ id: 1, period: '2022 - Sekarang', institution: 'Universitas AMIKOM Yogyakarta', major: 'S1 - Informatika' },
-{ id: 2, period: '2019 - 2022', institution: 'SMA Negeri 1 Contoh', major:
-'MIPA' }
+{ id: 1, period: '2023 - Sekarang', institution: 'Universitas AMIKOM Yogyakarta', major: 'S1 - Informatika' },
+{ id: 2, period: '2018 - 2021', institution: 'SMK Negeri 3 Yogyakarta', major:
+'Teknik Kendaraan Ringan (Otomotif)' }
 ];
 const skills = [
 { name: 'Vue.js', level: 'Menengah' },
